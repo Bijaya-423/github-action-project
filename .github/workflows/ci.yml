@@ -1,0 +1,36 @@
+# worksflows
+# job
+# steps
+# action
+
+
+# name: CI workflow  #Workflow name
+
+# on:
+#     push:
+
+# jobs:
+#     build: #job ka naam
+#         runs-on: ubuntu-latest #Github runner (free)
+#         steps:
+#             - name: Checkout Code
+#               uses: actions/checkout@v4 #clone the code into the ubuntu runner
+            
+#             - name: Setup Setup Dockers
+#               uses: docker/setup-buildx-action@v4 #setup docker in ubuntu runner
+
+
+name: TWS CI Workflow
+
+on:
+    push:
+        
+jobs:
+    build:  # job ka naam
+        runs-on: ubuntu-latest # GitHub Runner (Free)
+        steps:
+            - name: Checkout Code
+              uses: actions/checkout@v4 # clone the code into a ubuntu runner
+
+            - name: Setup Docker
+              uses: docker/setup-buildx-action@v4
