@@ -20,7 +20,7 @@
 #               uses: docker/setup-buildx-action@v4 #setup docker in ubuntu runner
 
 
-name: TWS CI Workflow
+name:  CI Workflow
 
 on:
     push:
